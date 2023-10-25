@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Base{% endblock %}</title>
+</head>
+<body>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+          <main>
+            {% block content %}
+            {% endblock %}
+          </main>
+          <footer>
+              {% block footer %}
+                <p>© 2023</p>
+              {% endblock%}
+          </footer>
+</body>
+</html>

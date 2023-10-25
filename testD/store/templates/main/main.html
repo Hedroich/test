@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Main{% endblock %}</title>
+</head>
+<body>
+      <header>
+         <h1>BLR</h1>
+         <time>05.10.2023</time>
+  </header>
+      {% include 'main/sidebar.html' %}
+
+    <footer>
+        {% block footer %}
+            <p>© 2023</p>
+        {% endblock%}
+    </footer>
+
+    <main align="center">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
